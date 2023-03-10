@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <img src="/img/logo.png" alt="">
+            <ul>
+                <a href="home.html"><li>HOME</li></a>
+                <a href="about-us.html"><li>ABOUT US</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+                <a href="input.html"><li>CERTIFICATE</li></a>
+            </ul>
+
+            <input type="search" placeholder="Cari Sesuatu. . .">
+            
+        </div>
+        <div class="content">
+            <!-- <img src="img/background2.jpeg" alt=""> -->
+            <!-- <h1>CERTIFICATE FORM</h1> -->
+            <!-- <div class="inputform"> -->
+            <!-- <input type="text" placeholder="Masukkan Nama"> -->
+            <!-- <input type="text" placeholder="Masukkan Kelas"> -->
+            <!-- <input type="text" placeholder="Masukkan Periode"> -->
+             </div>
+            <!-- <a href="certificate.html"><button>Dapatkan Sertifikat Anda</button></a> -->
+        </div>
+
+        <div class="biru">
+            <p>CERTIFICATE FORM</p>
+            <input type="text" name="" id="" placeholder="Masukkan Nama">
+            <input type="text" name="" id="" placeholder="Masukkan Kelas">
+            <input type="text" name="" id="" placeholder="Masukkan Periode">
+            
+            <a href="certificate.html">
+                <button >Dapatkan Sertifikat</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const txt1 = document.getElementById('tbuser');
+        const btn1 = document.getElementById('btn1');
+        const out1 = document.getElementById('output1');
+    
+        function fun1 () {
+            out1.innerHTML = txt1.value;
+        }
+    
+        btn1.addEventListener('click',fun1);
+    
+    </script>
+</body>
+</html>
+
+
+
+<!-- <article class="regular">
+    <h2>Textbox</h2>
+
+    <label for="tbuser">Username:</label>
+    <input type="text" id="tbuser" placeholder="Enter Username" maxlength="10">
+
+    <input type="button" id="btn1" value="Click Me">
+
+    <p class="output" id="output1"></p>
+</article> -->
+
